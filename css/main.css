@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Class to make navbar sticky on scroll */
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all .5s ease-in-out;
+}  
+
+/* Changes bottom border color on hover for sticky menu */
+.sticky ul li:hover {
+    border-bottom: 5px inset #000;
+}
+
+.sticky ul li a {
+    color: #000;
+}
+/*****************************************/
+
+.container {
+	width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+	background: #999;
+    border-top: 0;
+	margin: 0 auto;
+}
+
+header {
+	background: rgba(125, 255, 230, 0.5);
+	margin: 0;
+	height: 350px;
+    width: 100%;
+}
+
+#website_logo {
+    width: 412px;
+    height: 87px;
+    position: absolute;
+    top: 240px;
+    left: 30px;
+}
+
+nav {
+	width: 100%;
+    font-weight: normal;
+	font-size: 16px;
+    background: #0F0F0A;
+    transition: background .5s ease-in;
+
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    padding: 0 20px;
+    line-height: 60px;
+}
+
+nav ul li:hover {
+    background-color: #999;
+    border-bottom: 5px inset #fff;
+    line-height: 45px;
+    padding: 8px 20px 0 20px;
+    transition: background-color .6s ease-out;
+}
+
+nav ul li a {
+    display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* CONTENT */
+#home, #biography, #gallery, #blog, #contact {
+    width: 100%;
+    line-height: 27px;
+}
+
+#home h1, #biography h1, .fotobar h1, #gallery h1, #blog h1, #contact h1 {
+    font-size: 500%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+}
+
+.fotobar h1 {
+    line-height: 90%;
+}
+
+#home {
+    background: rgba(255, 235, 0, 0.5);
+}
+
+
+#biography {
+    background: rgba(0, 157, 255, 0.48);
+}
+
+#gallery {
+    background: url('../images/bg1.jpg') fixed no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#blog {
+    background: url('../images/bg3.jpg') fixed no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#contact {
+    background: rgba(112, 12, 232, .5);
+}
+
+.content {
+    margin: 0 auto;
+	font-size: 14px;
+    width: 700px;
+    padding: 100px 0;
+}
+
+.content h1 {
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+.content.gallery {
+    width: 930px;
+    text-align: center;
+}
+
+.fotobar {
+    width: 100%;
+	height: 650px;
+    background: url('../images/bg2.jpg') scroll no-repeat center;
+}
+
+footer {
+	background-color: #000;
+    color: #fff;
+	font-size: 12px;
+    padding: 15px 0 15px 15px;
+	border-top: 1px solid #000;
+    width: 100%;
+}
+
+
+
+/* ---- MEDIA QUERIES ----*/
+@media screen and (min-width: 450px) {
+
+}
+
+@media screen and (min-width: 550px) {
+
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
